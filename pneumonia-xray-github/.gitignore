@@ -1,0 +1,18 @@
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Artifacts
+artifacts/
+runs/
+*.pt
+*.pth
+*.png
+*.json
+
+# OS
+.DS_Store
+Thumbs.db
