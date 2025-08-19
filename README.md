@@ -67,21 +67,7 @@ During training we report:
 - Seeds are fixed (`--seed`) for dataloaders and torch backends.
 - Exact hyperparams are logged to `artifacts/run_config.json`.
 
-## 6) GitHub Deployment
 
-1. Create a new GitHub repo (e.g., `pneumonia-xray-pytorch`).
-2. Copy/push this project:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: pneumonia xray classifier"
-   git branch -M main
-   git remote add origin <YOUR_REPO_URL>
-   git push -u origin main
-   ```
-3. CI runs automatically on pushes (see `.github/workflows/ci.yml`).
-
-## 7) Responsible Use
 
 - Add DATASET LICENSE or link in your repo if required.
 - Keep the medical disclaimer visible in any UI/demo.
