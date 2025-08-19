@@ -12,22 +12,8 @@ A clean, reproducible pipeline to train and evaluate a pneumonia classifier on c
 
 ## 1) Dataset
 
-This repo expects an **ImageFolder** layout. You can use the popular *Chest X-Ray Images (Pneumonia)* dataset (Kermany et al., often available on Kaggle). Organize like:
+This repo should contain an **ImageFolder** layout. You can use the popular *Chest X-Ray Images (Pneumonia)* dataset (Kermany et al., often available on Kaggle). 
 
-```
-data/
-  train/
-    NORMAL/
-    PNEUMONIA/
-  val/
-    NORMAL/
-    PNEUMONIA/
-  test/
-    NORMAL/
-    PNEUMONIA/
-```
-
-> Tip: If your dataset only has `train`/`test`, split out a `val` set (e.g., 10–20%).
 
 ## 2) Quickstart
 
@@ -65,26 +51,6 @@ streamlit run app/streamlit_app.py
 
 ## 3) Repo Structure
 
-```
-.
-├── README.md
-├── requirements.txt
-├── LICENSE
-├── .gitignore
-├── src
-│   ├── dataset.py
-│   ├── model.py
-│   ├── train.py
-│   ├── inference_utils.py
-│   └── inference.py
-├── app
-│   └── streamlit_app.py
-├── tests
-│   └── test_imports.py
-└── .github
-    └── workflows
-        └── ci.yml
-```
 
 ## 4) Results & Metrics
 
@@ -120,6 +86,3 @@ During training we report:
 - Add DATASET LICENSE or link in your repo if required.
 - Keep the medical disclaimer visible in any UI/demo.
 
----
-
-If you need a notebook version or FastAPI/Gradio serving, add an issue—happy to help!
